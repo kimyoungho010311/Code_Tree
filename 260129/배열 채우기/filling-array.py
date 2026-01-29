@@ -1,9 +1,17 @@
+# 3 1 14 0 32 3
+
 arr = list(map(int, input().split()))
+cnt = 0
 
-reversed_arr = arr[::-1]
+for elem in arr:
+    if elem == 0:
+        break
+    cnt += 1
 
-if reversed_arr[0] == 0:
-    reversed_arr.pop(0)
+for i in range(cnt - 1, -1, -1):
+    print(arr[i], end=" ")
 
-for i in reversed_arr:
-    print(i, end=' ')
+# range(3-1, -1, -1)
+# range(2, -1, -1)
+
+# 3 1 14 0 32 3
