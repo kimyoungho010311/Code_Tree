@@ -13,7 +13,7 @@ for elem in arr:
     if arr[idx] % 5 == 0:
         cnt += 1
 
-        if cnt == 2:
-            #print(arr[:idx+1])
-            arr = arr[:idx+1]
-            break
+    if cnt >= 2:
+        #print(arr[:idx+1])
+        arr = arr[:idx+1]
+        break
