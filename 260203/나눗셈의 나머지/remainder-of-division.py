@@ -1,5 +1,5 @@
 A, B = map(int, input().split())
-arr = [0 for _ in range(11)]
+arr = [0 for _ in range(B)]
 result = 0
 N = len(arr)
 while A >= 1:
