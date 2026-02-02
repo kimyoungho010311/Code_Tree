@@ -1,12 +1,13 @@
 A, B = map(int, input().split())
-arr = [0] * B
+arr = [0 for _ in range(B)]
 result = 0
-
+N = len(arr)
 while A > 1:
     arr[A % B] += 1
-    A //= B
+    A = A // B
 
-for cnt in arr:
-    result += cnt * cnt
+for idx in range(N):
+    if arr[idx] != 0:
+        result += pow(arr[idx], 2)
 
 print(result)
